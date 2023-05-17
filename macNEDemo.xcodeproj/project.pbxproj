@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		986E655B2A13700E00ED742A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986E655A2A13700E00ED742A /* AppDelegate.swift */; };
+		986E655D2A13701000ED742A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986E655C2A13701000ED742A /* Assets.xcassets */; };
+		986E65602A13701000ED742A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 986E655E2A13701000ED742A /* MainMenu.xib */; };
+		986E656B2A13701000ED742A /* macNEDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986E656A2A13701000ED742A /* macNEDemoTests.swift */; };
+		986E65752A13701000ED742A /* macNEDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986E65742A13701000ED742A /* macNEDemoUITests.swift */; };
+		986E65772A13701000ED742A /* macNEDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986E65762A13701000ED742A /* macNEDemoUITestsLaunchTests.swift */; };
+		986E65852A13726400ED742A /* MainWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986E65832A13726400ED742A /* MainWC.swift */; };
+		986E65862A13726400ED742A /* MainWC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 986E65842A13726400ED742A /* MainWC.xib */; };
+		986E65882A1372F500ED742A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986E65872A1372F500ED742A /* MainVC.swift */; };
+		986E65902A13776E00ED742A /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 986E658F2A13776E00ED742A /* NetworkExtension.framework */; };
+		986E65932A13776E00ED742A /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986E65922A13776E00ED742A /* PacketTunnelProvider.swift */; };
+		986E65982A13776E00ED742A /* PkTunnel.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 986E658D2A13776E00ED742A /* PkTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		986E659E2A13811100ED742A /* VpnManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986E659D2A13811000ED742A /* VpnManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		986E65672A13701000ED742A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 986E654F2A13700E00ED742A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 986E65562A13700E00ED742A;
+			remoteInfo = macNEDemo;
+		};
+		986E65712A13701000ED742A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 986E654F2A13700E00ED742A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 986E65562A13700E00ED742A;
+			remoteInfo = macNEDemo;
+		};
+		986E65962A13776E00ED742A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 986E654F2A13700E00ED742A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 986E658C2A13776E00ED742A;
+			remoteInfo = PkTunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		986E659C2A13776E00ED742A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				986E65982A13776E00ED742A /* PkTunnel.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		986E65572A13700E00ED742A /* macNEDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macNEDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		986E655A2A13700E00ED742A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		986E655C2A13701000ED742A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		986E655F2A13701000ED742A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		986E65612A13701000ED742A /* macNEDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macNEDemo.entitlements; sourceTree = "<group>"; };
+		986E65662A13701000ED742A /* macNEDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macNEDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		986E656A2A13701000ED742A /* macNEDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macNEDemoTests.swift; sourceTree = "<group>"; };
+		986E65702A13701000ED742A /* macNEDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macNEDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		986E65742A13701000ED742A /* macNEDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macNEDemoUITests.swift; sourceTree = "<group>"; };
+		986E65762A13701000ED742A /* macNEDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macNEDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		986E65832A13726400ED742A /* MainWC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWC.swift; sourceTree = "<group>"; };
+		986E65842A13726400ED742A /* MainWC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWC.xib; sourceTree = "<group>"; };
+		986E65872A1372F500ED742A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		986E658D2A13776E00ED742A /* PkTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PkTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		986E658F2A13776E00ED742A /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		986E65922A13776E00ED742A /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		986E65942A13776E00ED742A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		986E65952A13776E00ED742A /* PkTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PkTunnel.entitlements; sourceTree = "<group>"; };
+		986E659D2A13811000ED742A /* VpnManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VpnManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		986E65542A13700E00ED742A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		986E65632A13701000ED742A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		986E656D2A13701000ED742A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		986E658A2A13776E00ED742A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986E65902A13776E00ED742A /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		986E654E2A13700E00ED742A = {
+			isa = PBXGroup;
+			children = (
+				986E65592A13700E00ED742A /* macNEDemo */,
+				986E65692A13701000ED742A /* macNEDemoTests */,
+				986E65732A13701000ED742A /* macNEDemoUITests */,
+				986E65912A13776E00ED742A /* PkTunnel */,
+				986E658E2A13776E00ED742A /* Frameworks */,
+				986E65582A13700E00ED742A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		986E65582A13700E00ED742A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				986E65572A13700E00ED742A /* macNEDemo.app */,
+				986E65662A13701000ED742A /* macNEDemoTests.xctest */,
+				986E65702A13701000ED742A /* macNEDemoUITests.xctest */,
+				986E658D2A13776E00ED742A /* PkTunnel.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		986E65592A13700E00ED742A /* macNEDemo */ = {
+			isa = PBXGroup;
+			children = (
+				986E655A2A13700E00ED742A /* AppDelegate.swift */,
+				986E655C2A13701000ED742A /* Assets.xcassets */,
+				986E655E2A13701000ED742A /* MainMenu.xib */,
+				986E65612A13701000ED742A /* macNEDemo.entitlements */,
+				986E65832A13726400ED742A /* MainWC.swift */,
+				986E65842A13726400ED742A /* MainWC.xib */,
+				986E65872A1372F500ED742A /* MainVC.swift */,
+				986E659D2A13811000ED742A /* VpnManager.swift */,
+			);
+			path = macNEDemo;
+			sourceTree = "<group>";
+		};
+		986E65692A13701000ED742A /* macNEDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				986E656A2A13701000ED742A /* macNEDemoTests.swift */,
+			);
+			path = macNEDemoTests;
+			sourceTree = "<group>";
+		};
+		986E65732A13701000ED742A /* macNEDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				986E65742A13701000ED742A /* macNEDemoUITests.swift */,
+				986E65762A13701000ED742A /* macNEDemoUITestsLaunchTests.swift */,
+			);
+			path = macNEDemoUITests;
+			sourceTree = "<group>";
+		};
+		986E658E2A13776E00ED742A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				986E658F2A13776E00ED742A /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		986E65912A13776E00ED742A /* PkTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				986E65922A13776E00ED742A /* PacketTunnelProvider.swift */,
+				986E65942A13776E00ED742A /* Info.plist */,
+				986E65952A13776E00ED742A /* PkTunnel.entitlements */,
+			);
+			path = PkTunnel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		986E65562A13700E00ED742A /* macNEDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 986E657A2A13701000ED742A /* Build configuration list for PBXNativeTarget "macNEDemo" */;
+			buildPhases = (
+				986E65532A13700E00ED742A /* Sources */,
+				986E65542A13700E00ED742A /* Frameworks */,
+				986E65552A13700E00ED742A /* Resources */,
+				986E659C2A13776E00ED742A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				986E65972A13776E00ED742A /* PBXTargetDependency */,
+			);
+			name = macNEDemo;
+			productName = macNEDemo;
+			productReference = 986E65572A13700E00ED742A /* macNEDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		986E65652A13701000ED742A /* macNEDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 986E657D2A13701000ED742A /* Build configuration list for PBXNativeTarget "macNEDemoTests" */;
+			buildPhases = (
+				986E65622A13701000ED742A /* Sources */,
+				986E65632A13701000ED742A /* Frameworks */,
+				986E65642A13701000ED742A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				986E65682A13701000ED742A /* PBXTargetDependency */,
+			);
+			name = macNEDemoTests;
+			productName = macNEDemoTests;
+			productReference = 986E65662A13701000ED742A /* macNEDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		986E656F2A13701000ED742A /* macNEDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 986E65802A13701000ED742A /* Build configuration list for PBXNativeTarget "macNEDemoUITests" */;
+			buildPhases = (
+				986E656C2A13701000ED742A /* Sources */,
+				986E656D2A13701000ED742A /* Frameworks */,
+				986E656E2A13701000ED742A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				986E65722A13701000ED742A /* PBXTargetDependency */,
+			);
+			name = macNEDemoUITests;
+			productName = macNEDemoUITests;
+			productReference = 986E65702A13701000ED742A /* macNEDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		986E658C2A13776E00ED742A /* PkTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 986E65992A13776E00ED742A /* Build configuration list for PBXNativeTarget "PkTunnel" */;
+			buildPhases = (
+				986E65892A13776E00ED742A /* Sources */,
+				986E658A2A13776E00ED742A /* Frameworks */,
+				986E658B2A13776E00ED742A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PkTunnel;
+			productName = PkTunnel;
+			productReference = 986E658D2A13776E00ED742A /* PkTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		986E654F2A13700E00ED742A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					986E65562A13700E00ED742A = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					986E65652A13701000ED742A = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 986E65562A13700E00ED742A;
+					};
+					986E656F2A13701000ED742A = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 986E65562A13700E00ED742A;
+					};
+					986E658C2A13776E00ED742A = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 986E65522A13700E00ED742A /* Build configuration list for PBXProject "macNEDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 986E654E2A13700E00ED742A;
+			productRefGroup = 986E65582A13700E00ED742A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				986E65562A13700E00ED742A /* macNEDemo */,
+				986E65652A13701000ED742A /* macNEDemoTests */,
+				986E656F2A13701000ED742A /* macNEDemoUITests */,
+				986E658C2A13776E00ED742A /* PkTunnel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		986E65552A13700E00ED742A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986E655D2A13701000ED742A /* Assets.xcassets in Resources */,
+				986E65862A13726400ED742A /* MainWC.xib in Resources */,
+				986E65602A13701000ED742A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		986E65642A13701000ED742A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		986E656E2A13701000ED742A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		986E658B2A13776E00ED742A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		986E65532A13700E00ED742A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986E65852A13726400ED742A /* MainWC.swift in Sources */,
+				986E65882A1372F500ED742A /* MainVC.swift in Sources */,
+				986E659E2A13811100ED742A /* VpnManager.swift in Sources */,
+				986E655B2A13700E00ED742A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		986E65622A13701000ED742A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986E656B2A13701000ED742A /* macNEDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		986E656C2A13701000ED742A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986E65772A13701000ED742A /* macNEDemoUITestsLaunchTests.swift in Sources */,
+				986E65752A13701000ED742A /* macNEDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		986E65892A13776E00ED742A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986E65932A13776E00ED742A /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		986E65682A13701000ED742A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 986E65562A13700E00ED742A /* macNEDemo */;
+			targetProxy = 986E65672A13701000ED742A /* PBXContainerItemProxy */;
+		};
+		986E65722A13701000ED742A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 986E65562A13700E00ED742A /* macNEDemo */;
+			targetProxy = 986E65712A13701000ED742A /* PBXContainerItemProxy */;
+		};
+		986E65972A13776E00ED742A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 986E658C2A13776E00ED742A /* PkTunnel */;
+			targetProxy = 986E65962A13776E00ED742A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		986E655E2A13701000ED742A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				986E655F2A13701000ED742A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		986E65782A13701000ED742A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		986E65792A13701000ED742A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		986E657B2A13701000ED742A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macNEDemo/macNEDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AUK8L3ZFDZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xqq.mac.macNEDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		986E657C2A13701000ED742A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macNEDemo/macNEDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AUK8L3ZFDZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xqq.mac.macNEDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		986E657E2A13701000ED742A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AUK8L3ZFDZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xqq.mac.macNEDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/macNEDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/macNEDemo";
+			};
+			name = Debug;
+		};
+		986E657F2A13701000ED742A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AUK8L3ZFDZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xqq.mac.macNEDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/macNEDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/macNEDemo";
+			};
+			name = Release;
+		};
+		986E65812A13701000ED742A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AUK8L3ZFDZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xqq.mac.macNEDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = macNEDemo;
+			};
+			name = Debug;
+		};
+		986E65822A13701000ED742A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AUK8L3ZFDZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xqq.mac.macNEDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = macNEDemo;
+			};
+			name = Release;
+		};
+		986E659A2A13776E00ED742A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PkTunnel/PkTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AUK8L3ZFDZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PkTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PkTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xqq.mac.macNEDemo.PkTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		986E659B2A13776E00ED742A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PkTunnel/PkTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AUK8L3ZFDZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PkTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PkTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xqq.mac.macNEDemo.PkTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		986E65522A13700E00ED742A /* Build configuration list for PBXProject "macNEDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				986E65782A13701000ED742A /* Debug */,
+				986E65792A13701000ED742A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		986E657A2A13701000ED742A /* Build configuration list for PBXNativeTarget "macNEDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				986E657B2A13701000ED742A /* Debug */,
+				986E657C2A13701000ED742A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		986E657D2A13701000ED742A /* Build configuration list for PBXNativeTarget "macNEDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				986E657E2A13701000ED742A /* Debug */,
+				986E657F2A13701000ED742A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		986E65802A13701000ED742A /* Build configuration list for PBXNativeTarget "macNEDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				986E65812A13701000ED742A /* Debug */,
+				986E65822A13701000ED742A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		986E65992A13776E00ED742A /* Build configuration list for PBXNativeTarget "PkTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				986E659A2A13776E00ED742A /* Debug */,
+				986E659B2A13776E00ED742A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 986E654F2A13700E00ED742A /* Project object */;
+}
